@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
+/*
+
+Así se escriben los comentario en CSS.
+Siempre se abren con slash asterisco, y
+se cierran con asterisco slash.
+
+*/
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    font-weight:400;
+    color: #494949;
+    background-color:#a094b7; /*el primer par es R, segundo es G y tercero es B*/
+}
+
+h1, h2{
+    font-family: 'Monoton', cursive;
+    color:##e1bee7; /* lo básico, para evitar problemas */
+    color:rgba(255,255,255,0.8); /* si el navegador lo entiende, lo usa */
+    text-align:center;
+    letter-spacing:0.1em;
+    font-weight:60000;
+}
+
+h1{
+    font-size:5rem;
+
+}
+
+h2{
+    font-size:2rem;
+    letter-spacing:0.1em;
+}
+
+@media screen and (max-width: 768px){
+    h1{ font-size:2.25rem; }
+    h2{ font-size:1.5rem; }
+}
+
+@media screen and (max-width: 576px){
+    h1{ font-size:3rem; }
+    h2{ font-size:1rem; }
+}
+
+h3{
+    display:none;
+}
+
+h5, h6{
+    font-weight:700;
+}
+
+a{
+    color:rgb(155,0,0);
+    text-decoration:none;
+}
+
+a:hover{
+    color:rgb(255,0,0);
+    text-decoration:underline;
+}
+
+header{
+    width:100%;
+    top:25%;
+    position: absolute;
+    text-align:center;
+    z-index:9;
+}
+
+@media screen and (orientation: portrait){
+    header{ top:12%; }
+}
+
+video{
+    width:98%;
+    padding:1% 1% .75% 1%;
+    height:auto;
+}
+
+main{
+    width:100%;
+}
+
+/*
+Puedes revisar detalles sobre el siguiente uso de flex
+en https://www.taniarascia.com/easiest-flex-grid-ever/
+*/
+
+/*mail*/
+#equipo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color:#494949 /* lo mismo que #FFFFFF, simplificando pares iguales*/;
+    color:#ffb300;
+}
+/*nombre*/
+#equipo a{
+    color:#ffb300;
+}
+
+#equipo a:hover{
+    color:rgba(255,255,255,.9);
+}
+
+.integrante {
+    flex-basis: 100%;
+}
+
+.integrante:hover {
+    cursor:crosshair;
+}
+
+@media screen and (orientation: landscape){
+    .integrante { flex:1; }
+}
+
+.integrante h4{
+    padding: 2rem 2rem 0.25rem 2rem;
+}
+
+.integrante address{
+    padding: 0.25rem 2rem;
+    font-size:0.9em;
+    font-style:normal;
+}
+
+/*texto*/
+.integrante blockquote{
+    padding: 6rem 2rem 2rem 2rem;
+    color: #ffb300
+}
+
+@media screen and (orientation: landscape){
+    .integrante blockquote{
+        padding: 6rem 2rem 2rem 2rem;
+        color:#ffb300
+        max-width:80%;
+    }
+}
+/*cita*/
+.integrante blockquote cite {
+    display:block;
+    font-style: normal;
+    font-weight: 700;
+    font-size:.8rem;
+    letter-spacing : 0.1rem;
+    padding-top:0.25rem;
+    color:#ffb300;
+}
+
+.integrante blockquote cite:before {
+    content:"— ";
+}
+
+.integrante:nth-of-type(1){
+    background-color:;
+    background-image:url('media/integrante-1a.png');
+    background-position: bottom right;
+    background-size:auto 100%;
+    background-repeat: no-repeat;
+}
+
+
+.integrante:nth-of-type(2){
+    background:;
+    background-image:url('media/integrante-2a.png');
+    background-position: bottom right;
+    background-size:auto 100%;
+    background-repeat: no-repeat;
+}
+
+.integrante:nth-of-type(3){
+    background: #ffb300;
+    background-image:url('media/integrante-3a.png');
+    background-position: bottom right;
+    background-size:auto 100%;
+    background-repeat: no-repeat;
+}
+
+.integrante:nth-of-type(1):hover{
+    background-color:#ff844c;
+    background-image:url('media/integrante-1b.png');
+    background-position: bottom right;
+    background-size:auto 100%;
+    background-repeat: no-repeat;
+}
+
+.integrante:nth-of-type(2):hover{
+    background:#ffb300;
+    background-image:url('media/integrante-2b.png');
+    background-position: bottom right;
+    background-size:auto 100%;
+    background-repeat: no-repeat;
+}
+
+.integrante:nth-of-type(3):hover{
+    background:#ffb300;
+    background-image:url('media/integrante-3b.png');
+    background-position: bottom right;
+    background-size:auto 100%;
+    background-repeat: no-repeat;
+}
+
+/*
+
+AHORA VAMOS POR PORTAFOLIO
+
+*/
+
+#portafolio{
+    width:100%;
+    padding:.25% 0;
+    background-image:url('media/gif.gif'); /*color de fondo*/
+}
+
+.item {
+    width:23%;
+    margin:1%;
+    color:#333; /*color letra proyectos*/
+    background:#d1c4e9; /*color fondo cuadrdos*/
+    box-shadow:0 0 3px rgba(0,0,0,.3); /*sombreado de cuadros*/
+}
+
+@media screen and (max-width: 768px){
+    .item{
+        width:48%;
+        margin:1%;
+        background:#333;
+        color:#eee;
+    }
+}
+ @media screen and (max-width: 576px){
+     .item{
+         width:96%;
+         margin:2%;
+         background:#000;
+         color:#FFF;
+    }
+}
+ .item:hover{
+     cursor:crosshair;
+}
+ .item figure{
+     overflow:hidden;
+}
+ .item figure img{
+     width:100%;
+     height:auto;
+     margin-bottom:-4px;
+
+}
+ .item:hover figure img{
+     transform:scale(2);
+     filter: grayscale(0);
+     transition:all ease-out 3s;
+}
+ .item h4{
+     font-size:2em;
+     letter-spacing:0.025em;
+     margin:5% 5% 3% 5%;
+}
+ .item p{
+     font-size:0.875em;
+     letter-spacing:0.1em;
+     margin:2% 5% 6% 5%;
+}
+ footer{
+     width:100%;
+     padding:2.5em 0 2em 0;
+     text-align:center;
+}
+ footer p{
+     text-transform:uppercase;
+     letter-spacing:0.1em;
+     font-size:0.9em;
+}
