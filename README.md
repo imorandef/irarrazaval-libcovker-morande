@@ -4,9 +4,9 @@
 
 #### MÓDULO WEB
 
-Basta con un poco de memoria frente a las pantallas conectadas a Internet para reconocer la acelerada evolución de la web, la que implica una evolución, tanto o más radical, en sus procesos de producción. Esta radical evolución ha hecho que los *webmasters* estén casi extintos, y en lo que era su hábitat ahora encontremos: 
+Basta con un poco de memoria frente a las pantallas conectadas a Internet para reconocer la acelerada evolución de la web, la que implica una evolución, tanto o más radical, en sus procesos de producción. Esta radical evolución ha hecho que los *webmasters* estén casi extintos, y en lo que era su hábitat ahora encontremos:
 
-- Community Managers; 
+- Community Managers;
 
 - Diseñadores UI (Visual Designers, Motion Designers, Interaction Designers);
 
@@ -34,7 +34,7 @@ Los contenidos en el repositorio deben estar [todos en una rama (*branch*) de no
 
 - una de GitHub Page, que se se estructura así: https://usuario.github.io/repositorio
 
-**Envíen sus propias URLs a profesor@faco.cl, con copia a las ayudantes (fslopezdeheredia@uc.cl, meinfante@uc.cl). El asunto de este correo debe ser: "Procesos de Producción / Entrega Nº1". Para el envío de este correo, consideren que**: 
+**Envíen sus propias URLs a profesor@faco.cl, con copia a las ayudantes (fslopezdeheredia@uc.cl, meinfante@uc.cl). El asunto de este correo debe ser: "Procesos de Producción / Entrega Nº1". Para el envío de este correo, consideren que**:
 
 - suman 0,5 a su nota si entregan hasta las 23:59 hrs. del domingo 25 de agosto;
 
