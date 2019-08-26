@@ -46,7 +46,7 @@ Entregando después de las 00:00 hrs. del lunes 9 de septiembre se obtiene nota 
 
 Pero antes de hacer entrega de tu trabajo, favor:
 
-- validen tu HTML con https://validator.w3.org/ 
+- validen tu HTML con https://validator.w3.org/
 
 - validen tu CSS con https://jigsaw.w3.org/css-validator/validator.html.es
 
